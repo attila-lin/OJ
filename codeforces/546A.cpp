@@ -3,15 +3,16 @@
 #include <cstdlib>
 #include <iostream>
 #include <algorithm>
-#include <string>
 
 typedef long long int lli;
 
 int main(int argc, char const *argv[])
 {
-  int n;
-  std::cin >> n;
-
-
+  /* code */
+  int  k, n, w;
+  std::cin >> k >> n >> w;
+  int res = (1+w)*w/2 * k - n;
+  if(res < 0) res = 0;
+  std::cout << res  << std::endl;
   return 0;
 }
