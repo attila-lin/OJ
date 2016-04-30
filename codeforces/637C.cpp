@@ -15,10 +15,15 @@ using namespace std;
 
 typedef long long int lli;
 
+
+
 int main(int argc, char const *argv[])
 {
   lli i,j,k,l,m,n;
   cin >> n;
+  for (lli i = 0; i < n; i++) {
+
+  }
 
 
   return 0;

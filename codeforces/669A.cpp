@@ -4,22 +4,19 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
-#include <math.h>
-#include <iomanip>
-#include <stack>
-#include <map>
-
-using namespace std;
-
-# define PI           3.14159265358979323846
 
 typedef long long int lli;
 
 int main(int argc, char const *argv[])
 {
-  lli i,j,k,l,m,n;
-  cin >> n;
+  int n;
+  std::cin >> n;
+  int res = (n / 3) * 2;
+  int mod = n % 3;
+  if(n % 3 != 0)
+    res ++;
 
+  std::cout << res << std::endl;
 
   return 0;
 }
