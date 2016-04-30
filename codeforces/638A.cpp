@@ -6,7 +6,6 @@
 #include <string>
 #include <math.h>
 #include <iomanip>
-#include <vector>
 #include <stack>
 #include <map>
 
@@ -19,7 +18,17 @@ typedef long long int lli;
 int main(int argc, char const *argv[])
 {
   lli i,j,k,l,m,n;
-  cin >> n;
+  cin >> n >> m;
+
+  if(m % 2 == 1)
+  {
+    l = (m + 1) / 2;
+  }
+  else{
+    l = (n - m) / 2 + 1;
+  }
+
+  cout << l << endl;
 
 
   return 0;
