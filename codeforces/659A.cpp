@@ -12,18 +12,19 @@
 
 using namespace std;
 
-#define max(a, b)  (a) > (b) ? (a) : (b)
-#define min(a, b)  (a) > (b) ? (b) : (a)
-
 # define PI           3.14159265358979323846
 
 typedef long long int lli;
 
 int main(int argc, char const *argv[])
 {
-  lli i,j,k,l,m,n;
-  cin >> n;
+  lli i,j,k,l,m,n,a,b;
+  cin >> n >> a >> b;
 
+  if((a+b) % n <= 0)
+    cout << (a+b) % n + n << endl;
+  else
+    cout << (a+b) % n << endl;
 
   return 0;
 }
