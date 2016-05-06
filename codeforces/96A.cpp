@@ -19,23 +19,31 @@ using namespace std;
 
 typedef long long int lli;
 
-lli a[5];
-
 int main(int argc, char const *argv[])
 {
-  lli n;
-  cin >> n;
-  int tmp;
-  for(lli i = 0; i < n; i++)
+  char c;
+  int count = 1;
+  scanf("%c",&c);
+  char last = c;
+  while(scanf("%c",&c) && c == '1' || c == '0')
   {
-	cin >> tmp;
-  	a[tmp] ++;
+  	if(last == c){
+		count ++;  	
+  		if(count >= 7)
+		{
+			cout << "YES" << endl;
+			return 0;
+		}
+  	}
+  	else{
+	  	
+	  	count = 1;
+	  	last = c;
+	  }
+  	
   }
-  lli res = a[4] + a[3];
-  a[1] = max(a[1]-a[3],0);
-  res += (a[1] + a[2] * 2 + 3) / 4;
   
-  cout << res << endl; 
+  cout << "NO" << endl;
 
   return 0;
 }
