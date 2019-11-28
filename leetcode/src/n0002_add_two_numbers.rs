@@ -20,6 +20,37 @@ use crate::common::linked_list::{ListNode, to_list};
 
 struct Solution {}
 
+// impl Solution {
+//
+//     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+//         if l1 == None && l2 == None {
+//             return None;
+//         }
+//         let ll1 = l1.unwrap();
+//         let ll2 = l2.unwrap();
+//         let mut index = 0;
+//         let mut need_jinwei = false;
+
+//         let mut tmp: Option<Box<ListNode>> = None;
+//         loop {
+//             let val1= ll1.val;
+//             let val2 = ll2.val;
+//             let sum = val1 + val2;
+//             let new_node = if sum >= 10 {
+//                 need_jinwei = true;
+//                 ListNode::new(sum % 10)
+//             }
+//             else {
+//                 need_jinwei = false;
+//                 ListNode::new(sum)
+//             };
+//             if tmp == None {
+//                 tmp =
+//             }
+//         }
+//     }
+// }
+
 impl Solution {
     pub fn add_two_numbers(
         l1: Option<Box<ListNode>>,
