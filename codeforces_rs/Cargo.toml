@@ -7,3 +7,30 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[[bin]]
+name = "a617"
+path = "src/a617.rs"
+
+
+[[bin]]
+name = "a236"
+path = "src/a236.rs"
+
+[[bin]]
+name = "a281"
+path = "src/a281.rs"
+
+[[bin]]
+name = "a719"
+path = "src/a719.rs"
+
+
+[[bin]]
+name = "a110"
+path = "src/a110.rs"
+
+
+[[bin]]
+name = "a41"
+path = "src/a41.rs"
