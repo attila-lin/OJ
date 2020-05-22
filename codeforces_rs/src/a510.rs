@@ -7,8 +7,6 @@ fn get_input() -> String {
 }
 
 fn main() -> io::Result<()> {
-    let mut input: i64 = get_input().trim().parse().unwrap();
-
     let mut input = get_input().trim().to_string();
 
     let mut substr_iter = input.split_whitespace();
@@ -20,6 +18,26 @@ fn main() -> io::Result<()> {
             .parse()
             .expect("Input is not a number")
     };
+
+    let a = next_num();
+    let b = next_num();
+
+    for i in 0..a {
+        for j in 0..b {
+            if i % 2 != 1 {
+                print!("#");
+            } else {
+                if j == b - 1 && (i / 2) % 2 == 0 {
+                    print!("#");
+                } else if j == 0 && (i / 2) % 2 == 1 {
+                    print!("#");
+                } else {
+                    print!(".");
+                }
+            }
+        }
+        print!("\n");
+    }
 
     Ok(())
 }

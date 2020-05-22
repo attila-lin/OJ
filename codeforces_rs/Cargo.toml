@@ -42,3 +42,27 @@ path = "src/a1335.rs"
 [[bin]]
 name = "b266"
 path = "src/b266.rs"
+
+[[bin]]
+name = "a59"
+path = "src/a59.rs"
+
+[[bin]]
+name = "a61"
+path = "src/a61.rs"
+
+[[bin]]
+name = "a510"
+path = "src/a510.rs"
+
+[[bin]]
+name = "b580"
+path = "src/b580.rs"
+
+[[bin]]
+name = "a318"
+path = "src/a318.rs"
+
+[[bin]]
+name = "a1166"
+path = "src/a1166.rs"
